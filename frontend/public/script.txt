@@ -1,0 +1,37 @@
+/**
+ * 
+ * 1) Instalar Yarn: yarn init -y
+ * 2) Adicionar o react e react-dom: yarn add react react-dom
+ * 3) Adicionar o babel e webpack: yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli
+ * 4) Adicionar o @babel/cli
+ * 5) No CMD -> yarn babel src/index.js --out-file public/bundle.js para a criação do arquivo bundle.js
+ * 6) Adicionar babel-loader -> yarn add babel-loader
+ * 7) Rodar yarn webpack --mode development
+ * 8) Adicionar o yarn add webpack-dev-server -D (servidor de desenvolvimento do Webpack para ele transpilar automaticamente)
+ * 9) Executar yarn webpack-dev-server --mode development
+ * 
+ * 10) Configurar um novo loader para o CSS:
+ * 10.1) Adicionar o yarn add style-loader css-loader
+ * 10.2) Adicionar o yarn add file-loader (para carregar arquivos dentro da aplicação. Ex.: arquivos de imagem) e configurar no webpackconfig
+ * 
+ * 11) Conectando Front-end com Back-End:
+ * 11.1) Adicionar Axios: yarn add axios (axios vai ser responsável por fazer as chamadas API no front-end)
+ * 11.2) Criar pasta services no src e criar o api.js (pasta service é a pasta responsável por armazenar qualquer tipo de arquivo que vai fornecer a comunicação com algum serviço externo)
+ * Por questões de segurança, deve-se adicionar o CORS no Back-end para sinalizar qual é o nosso front-end (yarn add cors)
+ * Babel: Converter (transpilar) código do React para um código que o browser entenda
+ * Webpack: Pra cada tipo de arquivo (.js, .css, .png) eu vou converter o código de uma maneira diferente
+ * JSX: Quer dizer HTML dentro do JavaScript (JavaScript XML)
+ * 
+ * 12) Adicionar um plug-in com Babel para entender funções async/await
+ * 12.1) (yarn add @babel/plugin-transform-runtime)
+ * 12.2) adicionar plugin no babel.config ('@babel/plugin-transform-runtime)
+ * 
+ * 
+ * Loaders: babel-loaders, css-loader, image-loader, file-loader. Quando algo for loader é algo utilizado pelo Webpack para dar sentido ao Js
+ * 
+ * Components mais importantes do React:
+ * 1) Componentes
+ * 2) Propriedade
+ * 3) Estado
+ */
+
